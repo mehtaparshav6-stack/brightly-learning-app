@@ -1,0 +1,91 @@
+const {chromium}=require(process.env.BRIGHTLY_PLAYWRIGHT||'@playwright/test');
+const assert=require('node:assert/strict');
+const path=require('node:path');
+const {execFileSync}=require('node:child_process');
+
+(async()=>{
+ const browser=await chromium.launch({headless:true,channel:'chrome'});
+ const page=await browser.newPage({baseURL:process.env.BRIGHTLY_TEST_URL||'http://127.0.0.1:8877',viewport:{width:1440,height:1050}});
+ const errors=[],narration=[],purchases=[];
+ page.on('pageerror',error=>errors.push(error.message));
+ page.on('request',request=>{
+  if(request.url().endsWith('/api/narration'))narration.push(request.postDataJSON());
+  if(request.url().endsWith('/shields'))purchases.push(request.postDataJSON());
+ });
+ try{
+  await page.route('https://www.youtube-nocookie.com/**',route=>route.fulfill({contentType:'text/html',body:'<html><body>Creator-hosted original recording fixture</body></html>'}));
+  const signup=await page.request.post('/api/signup',{data:{name:'Sunshine Test',email:`sunshine${Date.now()}@example.com`,password:'TestingPassword123'}});
+  const session=await signup.json();assert.equal(signup.status(),200);
+  const created=await page.request.post('/api/children',{headers:{'x-csrf-token':session.csrf},data:{name:'Sunny',age:6,language:'en',avatar:'sun'}});
+  const child=await created.json();assert.equal(child.journey.balance,20);assert.equal(child.journey.streak,0);
+  await page.goto('/');await page.getByRole('button',{name:/Sunny/}).click();
+  await page.getByRole('button',{name:/Visit your sunshine trail/}).click();
+  await page.getByRole('heading',{name:'Your sunshine trail.'}).waitFor();
+  assert.equal(await page.locator('.streak-number strong').textContent(),'0');
+  assert.equal(await page.locator('.seed-wallet strong').textContent(),'20');
+  assert.equal(await page.locator('.mission-card').count(),4);
+  assert.equal(await page.getByRole('button',{name:/Earn more Sunseeds/}).isDisabled(),true);
+  await page.getByRole('button',{name:/Explore lessons/}).click();
+  await page.getByRole('button',{name:/The magic word/}).click();
+  await page.getByRole('button',{name:/Your turn/}).click();
+  await page.getByRole('button',{name:'May I use it, please?'}).click();
+  await page.getByRole('button',{name:/Choose an answer/}).click();
+  await page.getByRole('dialog').getByText('First spark',{exact:true}).waitFor();
+  await page.getByRole('dialog').getByText('✺ +15 Sunseeds',{exact:true}).waitFor();
+  await page.getByRole('button',{name:/Keep growing/}).click();
+  await page.locator('.seed-reward').filter({hasText:'+27 Sunseeds'}).waitFor();
+  await page.getByRole('button',{name:/Streak & missions/}).click();
+  assert.equal(await page.locator('.streak-number strong').textContent(),'1');
+  assert.equal(await page.locator('.seed-wallet strong').textContent(),'47');
+  await page.getByRole('button',{name:/Get a shield/}).click();
+  await page.getByText('A shield is ready for a rainy day.',{exact:true}).waitFor();
+  assert.equal(await page.locator('.seed-wallet strong').textContent(),'7');
+  assert.equal(await page.locator('.shield-slots .equipped').count(),2);
+  const duplicate=await page.request.post(`/api/children/${child.id}/shields`,{headers:{'x-csrf-token':session.csrf},data:purchases[0]});
+  assert.equal(duplicate.status(),200);assert.equal((await duplicate.json()).journey.balance,7);
+  const game=await page.request.post(`/api/children/${child.id}/games`,{headers:{'x-csrf-token':session.csrf},data:{game_id:'habit',game_level:1,answers:[0,1,2],attempt_id:'sunshine-game-attempt'}});
+  assert.equal(game.status(),200);
+  const reading=await page.request.post(`/api/children/${child.id}/readings`,{headers:{'x-csrf-token':session.csrf},data:{kind:'stories',item_id:'lion-mouse',language:'en'}});
+  assert.equal(reading.status(),200);
+  await page.reload();await page.getByRole('button',{name:/Sunny/}).click();await page.getByRole('button',{name:/Streak & missions/}).click();
+  assert.equal(await page.locator('.mission-complete').count(),3);
+  await page.getByRole('button',{name:/Get a shield/}).click();
+  await page.getByRole('button',{name:/Your pouch is full/}).waitFor();
+  assert.equal(await page.locator('.shield-slots .equipped').count(),3);
+  const response=await page.request.get(`/api/children/${child.id}/journey`);const saved=await response.json();
+  const python=path.join(__dirname,'../.venv/bin/python');
+  const db=process.env.BRIGHTLY_TEST_DB;
+  if(db){
+   // Populate only this disposable test child's calendar to exercise the protected-day UI.
+   execFileSync(python,['-c',`import sqlite3,sys\nfrom datetime import date,timedelta\nc=sqlite3.connect(sys.argv[1]);child=int(sys.argv[2]);today=date.fromisoformat(sys.argv[3])\nfor offset in (3,2): c.execute("INSERT OR REPLACE INTO journey_days VALUES(?,?,?,?,?)",(child,str(today-timedelta(days=offset)),'learned',2,1))\nc.execute("UPDATE journey_wallets SET checked_through=? WHERE child_id=?",(str(today-timedelta(days=2)),child));c.commit();c.close()`,db,String(child.id),saved.journey.day]);
+   await page.reload();await page.getByRole('button',{name:/Sunny/}).click();await page.getByRole('button',{name:/Streak & missions/}).click();
+   assert.equal(await page.locator('.streak-number strong').textContent(),'3');
+   assert.equal(await page.locator('.day-protected').count(),1);
+   assert.equal(await page.locator('.shield-slots .equipped').count(),2);
+  }
+  await page.screenshot({path:path.join(__dirname,'../screenshots/sunshine-trail-desktop.png'),fullPage:true,animations:'disabled'});
+  const language=page.getByRole('combobox',{name:/Switch to English or Hindi/});
+  await language.selectOption('hi');await page.getByRole('heading',{name:'तुम्हारी धूप की राह।'}).waitFor();
+  await page.setViewportSize({width:390,height:844});
+  assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
+  await page.screenshot({path:path.join(__dirname,'../screenshots/sunshine-trail-hindi-mobile.png'),fullPage:true,animations:'disabled'});
+  await page.locator('.child-nav button').nth(4).click();await page.getByRole('button',{name:/उठो लाल अब आँखें खोलो/}).click();
+  assert.equal(await page.locator('iframe').count(),0);
+  await page.getByRole('button',{name:'असली रिकॉर्डिंग सुनें',exact:true}).click();
+  const hindi=page.getByTitle('उठो लाल अब आँखें खोलो');
+  assert((await hindi.getAttribute('src')).includes('h6g2W0k3hhQ'));
+  assert((await hindi.getAttribute('src')).includes('autoplay=1'));
+  assert.equal(narration.length,0);
+  await page.screenshot({path:path.join(__dirname,'../screenshots/hindi-original-poem.png'),fullPage:true,animations:'disabled'});
+  await language.selectOption('en');assert.equal(await page.locator('iframe').count(),0);await page.getByRole('button',{name:/Back to the library/}).first().click();
+  await page.locator('.child-nav button').nth(4).click();await page.getByRole('button',{name:/Twinkle, twinkle, little star/}).click();
+  assert.equal(await page.getByRole('button',{name:/Sing/,exact:true}).count(),0);
+  await page.getByRole('button',{name:'Listen to the original recording',exact:true}).click();
+  assert((await page.getByTitle('Twinkle, twinkle, little star').getAttribute('src')).includes('yCjJyiqpAuU'));
+  assert.equal(narration.length,0);
+  await page.setViewportSize({width:1440,height:1050});
+  await page.screenshot({path:path.join(__dirname,'../screenshots/english-original-rhyme.png'),fullPage:true,animations:'disabled'});
+  assert.deepEqual(errors,[]);
+  console.log('PASS: daily learning streak, earned Sunseeds, mission rewards, shield purchase and retry, shield cap, protected-day calendar, persistence, Hindi/mobile journey, and original English/Hindi recordings without generated singing');
+ }catch(error){await page.screenshot({path:path.join(__dirname,'../screenshots/journey-test-failure.png'),fullPage:true,animations:'disabled'});throw error}finally{await browser.close()}
+})().catch(error=>{console.error(error);process.exit(1)});

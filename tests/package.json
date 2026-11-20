@@ -1,0 +1,1 @@
+{"name":"brightly-browser-checks","private":true,"scripts":{"test":"node browser.cjs","test:activity":"node activity-voice.cjs","test:journey":"node journey.cjs","test:recordings":"node original-recordings-live.cjs"},"devDependencies":{"@playwright/test":"1.65.0"}}

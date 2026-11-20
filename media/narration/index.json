@@ -1,0 +1,732 @@
+{
+  "provider": "Microsoft Edge neural speech",
+  "voices": {
+    "en": "en-GB-SoniaNeural",
+    "hi": "hi-IN-SwaraNeural",
+    "mr": "mr-IN-AarohiNeural"
+  },
+  "tracks": [
+    {
+      "kind": "stories",
+      "item_id": "lion-mouse",
+      "language": "en",
+      "file": "aed94445379584224c99959d91ffb9300f6ab61ae84a32e6ab489107773c8f8f.mp3",
+      "bytes": 469440
+    },
+    {
+      "kind": "stories",
+      "item_id": "lion-mouse",
+      "language": "hi",
+      "file": "ab41b533f7b5c15261129debe9f6796b5be714d0cc2fd1314e030842e6aa5c54.mp3",
+      "bytes": 639504
+    },
+    {
+      "kind": "stories",
+      "item_id": "tortoise-hare",
+      "language": "en",
+      "file": "fcf0c4522347e35618f0a4f3ffcd3686b248e917f1ae8d9c5352fbbf6df10272.mp3",
+      "bytes": 496800
+    },
+    {
+      "kind": "stories",
+      "item_id": "tortoise-hare",
+      "language": "hi",
+      "file": "03e9f7eb4ec890fec14fbc7d9b6f22802d9e6c03784e7a3ebadf1ac7cf0d04fd.mp3",
+      "bytes": 631440
+    },
+    {
+      "kind": "stories",
+      "item_id": "crow-pitcher",
+      "language": "en",
+      "file": "2d59d8e325f8b1de02869e83afebd554c5957a297aee8219321a249000f35c0f.mp3",
+      "bytes": 470304
+    },
+    {
+      "kind": "stories",
+      "item_id": "crow-pitcher",
+      "language": "hi",
+      "file": "fa481ef1ea39b101453edf7783341f8b22868dc2a3254a072c6d356535a25dec.mp3",
+      "bytes": 633600
+    },
+    {
+      "kind": "stories",
+      "item_id": "ant-grasshopper",
+      "language": "en",
+      "file": "983d66a20bfc899d904f46334eba8877b743d49793680ac0e96575815728b0ca.mp3",
+      "bytes": 447408
+    },
+    {
+      "kind": "stories",
+      "item_id": "ant-grasshopper",
+      "language": "hi",
+      "file": "fedab40e856539d9c566ebdc376e597450669b373547afb34d73721dacedfb6f.mp3",
+      "bytes": 586080
+    },
+    {
+      "kind": "stories",
+      "item_id": "wind-sun",
+      "language": "en",
+      "file": "7d10fc609e08f6e78c1fa67f2d6eb8efd945138e0e7638259bea65b1f153065d.mp3",
+      "bytes": 450576
+    },
+    {
+      "kind": "stories",
+      "item_id": "wind-sun",
+      "language": "hi",
+      "file": "0f9ad0cdcf2c682bb5db6be2d4cfceeac214c6a6c8eba00adb4a6a461694dc6d.mp3",
+      "bytes": 571824
+    },
+    {
+      "kind": "stories",
+      "item_id": "fox-grapes",
+      "language": "en",
+      "file": "cf11a40e8af5d38f45df06a9d60401830554c53632736d7da5e63267e0d34a67.mp3",
+      "bytes": 442656
+    },
+    {
+      "kind": "stories",
+      "item_id": "fox-grapes",
+      "language": "hi",
+      "file": "5a85e65da684ac0d7e6329b6c33320328d52d83b972810096c154cdb41c2c16d.mp3",
+      "bytes": 594432
+    },
+    {
+      "kind": "stories",
+      "item_id": "boy-wolf",
+      "language": "en",
+      "file": "33a69b23f9062a1ad413a7d685255b8945db19927b9daced25c788f53172b6d5.mp3",
+      "bytes": 463824
+    },
+    {
+      "kind": "stories",
+      "item_id": "boy-wolf",
+      "language": "hi",
+      "file": "ce2afe7922d461a5ecea955e9cb5290139e35f12ee9d4f15fb20e68446680935.mp3",
+      "bytes": 601920
+    },
+    {
+      "kind": "stories",
+      "item_id": "dog-reflection",
+      "language": "en",
+      "file": "1e96b3d74d6f5741c4251f02af688bf2c66410a017d71553ad250dd2ab0ac9e5.mp3",
+      "bytes": 430848
+    },
+    {
+      "kind": "stories",
+      "item_id": "dog-reflection",
+      "language": "hi",
+      "file": "2e32dab458da433eb86c4c8079bf0edecd7d29fe5bd619e709c8605e00c419f8.mp3",
+      "bytes": 561024
+    },
+    {
+      "kind": "stories",
+      "item_id": "honest-woodcutter",
+      "language": "en",
+      "file": "c9a36bacbecc16aa483ca3a4831c019a06abb2fff5b397aac582349e193a1b8a.mp3",
+      "bytes": 450576
+    },
+    {
+      "kind": "stories",
+      "item_id": "honest-woodcutter",
+      "language": "hi",
+      "file": "f3e63b0f97e2e939c62829845154ae03fb54279b4df6d2353b4f4ab3912acfcc.mp3",
+      "bytes": 567360
+    },
+    {
+      "kind": "stories",
+      "item_id": "fox-stork",
+      "language": "en",
+      "file": "fce1d4c65321b920efce2097f138739fb7bc1fa0137d8560bbae60d7400439b1.mp3",
+      "bytes": 432000
+    },
+    {
+      "kind": "stories",
+      "item_id": "fox-stork",
+      "language": "hi",
+      "file": "c9b3dc7a8a10e6d993c2f9f10817c2fed90f0f1c4358f858cf28e7cd04cd9bd3.mp3",
+      "bytes": 534816
+    },
+    {
+      "kind": "stories",
+      "item_id": "bundle-sticks",
+      "language": "en",
+      "file": "b497d30121d104c47462a03d05e73efd8fc65e53921313864fc400b9ae4d580c.mp3",
+      "bytes": 466560
+    },
+    {
+      "kind": "stories",
+      "item_id": "bundle-sticks",
+      "language": "hi",
+      "file": "3a268049ef25863d426a651718d4635a40378fa493e2cc1d37cd2d9934930bb5.mp3",
+      "bytes": 601632
+    },
+    {
+      "kind": "stories",
+      "item_id": "golden-goose",
+      "language": "en",
+      "file": "f0e863e9108abd0460b413da29cc216402ab517b044516cf1b0740b6f0567218.mp3",
+      "bytes": 418320
+    },
+    {
+      "kind": "stories",
+      "item_id": "golden-goose",
+      "language": "hi",
+      "file": "4fc7c0b6d52073a7fad7cd677c7da11e3a3f7cfc7f10582f0d41aa5270823bbf.mp3",
+      "bytes": 559296
+    },
+    {
+      "kind": "stories",
+      "item_id": "monkey-crocodile",
+      "language": "en",
+      "file": "29dd9daefa61f032cfdccfbc5a5289e6f4b252cda572ee0c1d816c7b4064c8ec.mp3",
+      "bytes": 487584
+    },
+    {
+      "kind": "stories",
+      "item_id": "monkey-crocodile",
+      "language": "hi",
+      "file": "eac25762df0d12aea27b541792f2da2833f688a820f77ed2538680dd409cb56c.mp3",
+      "bytes": 625824
+    },
+    {
+      "kind": "stories",
+      "item_id": "blue-jackal",
+      "language": "hi",
+      "file": "0062ca3391e30b14a08d6d201f48286116d9368793cf57d7edb2604c07307fb2.mp3",
+      "bytes": 587664
+    },
+    {
+      "kind": "stories",
+      "item_id": "lion-rabbit",
+      "language": "hi",
+      "file": "4a1a3db8d5653ca679217079378a5483a46d79735328fefe65f43ffeb647bcf4.mp3",
+      "bytes": 581616
+    },
+    {
+      "kind": "stories",
+      "item_id": "doves-net",
+      "language": "hi",
+      "file": "920d537488dedd13150885e765b54112d50e298c36a29392e6dbfba9a6170438.mp3",
+      "bytes": 563472
+    },
+    {
+      "kind": "stories",
+      "item_id": "talkative-tortoise",
+      "language": "hi",
+      "file": "861549d4d96ffc8f6259e84f305a00eda7cbc8535f6a69eb5c828cfe1973989b.mp3",
+      "bytes": 613008
+    },
+    {
+      "kind": "stories",
+      "item_id": "talkative-tortoise",
+      "language": "en",
+      "file": "0f492466022a54571a90d2b91aa0f47fb16518de4dd3f2f574b81e0803214289.mp3",
+      "bytes": 464544
+    },
+    {
+      "kind": "stories",
+      "item_id": "doves-net",
+      "language": "en",
+      "file": "3ae5c48518b738e45a1182e7366f8bd448befc4d7b27612d43f6d290d90d242f.mp3",
+      "bytes": 442800
+    },
+    {
+      "kind": "stories",
+      "item_id": "four-friends",
+      "language": "hi",
+      "file": "8337b6f7f75e499062fab37d14fb106d674d5adfe09b87761a3059d76d99abec.mp3",
+      "bytes": 574848
+    },
+    {
+      "kind": "stories",
+      "item_id": "blue-jackal",
+      "language": "en",
+      "file": "4573070d45473c50f5092601e86a93023975cd16420e81e37554fd86ab576db2.mp3",
+      "bytes": 456480
+    },
+    {
+      "kind": "stories",
+      "item_id": "four-friends",
+      "language": "en",
+      "file": "49e91744f9624cf858bd8f90d79168d8dea973fb9936a1cb640d215b8b1fe238.mp3",
+      "bytes": 464688
+    },
+    {
+      "kind": "stories",
+      "item_id": "three-fish",
+      "language": "hi",
+      "file": "fef954bdfeb5bd4f6e25482836acbc3867d9478f9260ad29eae929b8ec7e18fd.mp3",
+      "bytes": 526176
+    },
+    {
+      "kind": "stories",
+      "item_id": "jackal-drum",
+      "language": "hi",
+      "file": "74dcf86ba7532ee9e0a321f84bbc684343834d5441f909f689d2e13039d09a19.mp3",
+      "bytes": 559872
+    },
+    {
+      "kind": "stories",
+      "item_id": "birbal-line",
+      "language": "hi",
+      "file": "188a9ecad8fc6b0736e562cbb45a3ddc2e6fe7245c835e09b39f965bb057b228.mp3",
+      "bytes": 580896
+    },
+    {
+      "kind": "stories",
+      "item_id": "jackal-drum",
+      "language": "en",
+      "file": "e6af003fb62bf3fb16a8d6c9dc2c815e74d27cf92c638ed55c51a9e99b26e198.mp3",
+      "bytes": 451728
+    },
+    {
+      "kind": "stories",
+      "item_id": "three-fish",
+      "language": "en",
+      "file": "dd9ea4c3c8e03c4e4b754eea03a8626cebdbef787bdbacfc07f6e16da11c6c98.mp3",
+      "bytes": 409680
+    },
+    {
+      "kind": "stories",
+      "item_id": "birbal-khichdi",
+      "language": "hi",
+      "file": "eefb52103d6ddbfdfee6760226c5e819d62382fb7b98a6d63986acec9a5bce53.mp3",
+      "bytes": 574848
+    },
+    {
+      "kind": "stories",
+      "item_id": "lion-rabbit",
+      "language": "en",
+      "file": "13fa82fdd7ad87bb3c0003af57da11b2da48d735489b75bdd10da23a7b04613c.mp3",
+      "bytes": 429984
+    },
+    {
+      "kind": "stories",
+      "item_id": "cap-seller",
+      "language": "hi",
+      "file": "960de3b6f47555d004aea2745e7cbc24e1eb343b70e2c784abc2745fe48a699d.mp3",
+      "bytes": 575280
+    },
+    {
+      "kind": "rhymes",
+      "item_id": "twinkle",
+      "language": "en",
+      "file": "111df4cad5e6159948f864fae7ea59aa35035cf617c521c29ebfe873dd3425f3.mp3",
+      "bytes": 76320
+    },
+    {
+      "kind": "rhymes",
+      "item_id": "twinkle",
+      "language": "hi",
+      "file": "cf76107a767a184f94763d343221276a2da26a28a3c91221162c3999125c4bc7.mp3",
+      "bytes": 86976
+    },
+    {
+      "kind": "stories",
+      "item_id": "birbal-line",
+      "language": "en",
+      "file": "af535543a686c6cf07cb81282154d0a151dcce5abb20e9ce21955218a82607cf.mp3",
+      "bytes": 446976
+    },
+    {
+      "kind": "stories",
+      "item_id": "stone-soup",
+      "language": "hi",
+      "file": "839c3b869bec7d29c5e988ae5198dcff737abd6566cc9b2484bc64c53026c630.mp3",
+      "bytes": 577008
+    },
+    {
+      "kind": "stories",
+      "item_id": "cap-seller",
+      "language": "en",
+      "file": "e1389d7790bc41de784d2f4e51d10708c35e9386bfc18a9cf3dbc739d61ef293.mp3",
+      "bytes": 427392
+    },
+    {
+      "kind": "rhymes",
+      "item_id": "twinkle",
+      "language": "mr",
+      "file": "357914b551245f59564aa81012edd9c0c0a71e66243e28562f46a031f470eea4.mp3",
+      "bytes": 80928
+    },
+    {
+      "kind": "rhymes",
+      "item_id": "baa-sheep",
+      "language": "hi",
+      "file": "1a714c28fcb031a5274539b49a50c50f2f902b96a1dbd36acf2d0ee7f70552da.mp3",
+      "bytes": 90144
+    },
+    {
+      "kind": "rhymes",
+      "item_id": "baa-sheep",
+      "language": "en",
+      "file": "0eb51f8c2ce1cc327a0c1f3129198c8994d7949a3edc286c682da231ba2ab799.mp3",
+      "bytes": 78480
+    },
+    {
+      "kind": "rhymes",
+      "item_id": "mary-lamb",
+      "language": "hi",
+      "file": "fe9be9c463a5f21818067ca2e3bf5672941d74f581f3ecb8beddbea121150129.mp3",
+      "bytes": 82656
+    },
+    {
+      "kind": "rhymes",
+      "item_id": "baa-sheep",
+      "language": "mr",
+      "file": "20c6ab625ace98c0ed1bcdbbcfe44e4a2e0926f35197e69a44ea58dc99f00b45.mp3",
+      "bytes": 84096
+    },
+    {
+      "kind": "rhymes",
+      "item_id": "mary-lamb",
+      "language": "mr",
+      "file": "9816b5c2b8f295097ad553e0413394f4d9517fb8a978c3cc2d96d0b200c71e7f.mp3",
+      "bytes": 76320
+    },
+    {
+      "kind": "rhymes",
+      "item_id": "hickory",
+      "language": "hi",
+      "file": "47e3134fd95c7210fca6358d9579468e608d71e9b91e9cfc2b24aec1c36285b7.mp3",
+      "bytes": 81504
+    },
+    {
+      "kind": "rhymes",
+      "item_id": "hickory",
+      "language": "mr",
+      "file": "fe0fdc9740e53aa896cb5fcea5a8759fec34d2b61863782398f47c5c6838a47d.mp3",
+      "bytes": 79344
+    },
+    {
+      "kind": "rhymes",
+      "item_id": "hey-diddle",
+      "language": "hi",
+      "file": "3f0081ae1da309214ccd7346416b2eb5c9367196607a1a72907d65bbf2064a29.mp3",
+      "bytes": 95616
+    },
+    {
+      "kind": "rhymes",
+      "item_id": "hickory",
+      "language": "en",
+      "file": "8bcc980bd88260cef2a8b685af3efb3d0162d580353662ab949faff61de3fadc.mp3",
+      "bytes": 84096
+    },
+    {
+      "kind": "rhymes",
+      "item_id": "hey-diddle",
+      "language": "en",
+      "file": "86023ec36e1651cdcb24c473787d8a412c51f90d40d0b7e019c5d1ea19424cae.mp3",
+      "bytes": 81792
+    },
+    {
+      "kind": "rhymes",
+      "item_id": "mary-lamb",
+      "language": "en",
+      "file": "94893f00122cfb32a276799ffda8e31dd6a7de42a3d6d5fa557f7d02aeec2590.mp3",
+      "bytes": 65376
+    },
+    {
+      "kind": "rhymes",
+      "item_id": "hey-diddle",
+      "language": "mr",
+      "file": "326f8a9557cbfb13a1458074d7e6ce13de8bfddf6447568fed8909c5feb7fc13.mp3",
+      "bytes": 85968
+    },
+    {
+      "kind": "rhymes",
+      "item_id": "row-boat",
+      "language": "hi",
+      "file": "6726749166751338cd1f58b0757717ecc28e272e909fdb702d435148e5c997de.mp3",
+      "bytes": 83952
+    },
+    {
+      "kind": "rhymes",
+      "item_id": "row-boat",
+      "language": "mr",
+      "file": "2af55ae84ecb7ab48106b5c6e0352e21441f77211b3dd3fb1afa6390a4864912.mp3",
+      "bytes": 75600
+    },
+    {
+      "kind": "stories",
+      "item_id": "birbal-khichdi",
+      "language": "en",
+      "file": "6e12d02ec4c6062ffdcf88a8be82c740d3fe456f56c047ed4b8cb19701f3f420.mp3",
+      "bytes": 452448
+    },
+    {
+      "kind": "rhymes",
+      "item_id": "row-boat",
+      "language": "en",
+      "file": "9207a74e44ac005821ce19f5a5466b6ab405fe3282812208b1daa62c3b258102.mp3",
+      "bytes": 70848
+    },
+    {
+      "kind": "rhymes",
+      "item_id": "humpty",
+      "language": "hi",
+      "file": "20e7ab9e00db4a7101a331c7bfaaa60bdebca03d69b8572630772e93773d7aed.mp3",
+      "bytes": 86832
+    },
+    {
+      "kind": "rhymes",
+      "item_id": "humpty",
+      "language": "mr",
+      "file": "5d1750ae19421af8d9e590a916342bdc658458a024e8285d0de6afd357f91392.mp3",
+      "bytes": 82944
+    },
+    {
+      "kind": "stories",
+      "item_id": "stone-soup",
+      "language": "en",
+      "file": "2175e11c4654329dab8291bf8eca3f95a7f3f8f60c0cf45052c3d299bb53fec8.mp3",
+      "bytes": 448416
+    },
+    {
+      "kind": "rhymes",
+      "item_id": "rain-away",
+      "language": "mr",
+      "file": "c45f4423f5d8f814f427c668e954f1370356dd2e3c578fbf7d3b9262c1ebf356.mp3",
+      "bytes": 77328
+    },
+    {
+      "kind": "rhymes",
+      "item_id": "rain-away",
+      "language": "hi",
+      "file": "a7272613eb049136e17c030cad93e6cdf5395483f020599b3f7a6d620d40f182.mp3",
+      "bytes": 83232
+    },
+    {
+      "kind": "rhymes",
+      "item_id": "rain-away",
+      "language": "en",
+      "file": "993cbd054882f8c3219f4fa58817faccf996c5cb52e73a812a5862ef3a96cec9.mp3",
+      "bytes": 57456
+    },
+    {
+      "kind": "rhymes",
+      "item_id": "pat-cake",
+      "language": "hi",
+      "file": "276a7cf81f0b18ce6ea2a0188b2898abd8f4955373d09a23d9429235f7f12228.mp3",
+      "bytes": 93456
+    },
+    {
+      "kind": "rhymes",
+      "item_id": "pat-cake",
+      "language": "mr",
+      "file": "ef9606857ca5a721ecb467ffb97dc8a5499129651aa62bbd4ffdf549c317d91b.mp3",
+      "bytes": 80784
+    },
+    {
+      "kind": "rhymes",
+      "item_id": "little-bo-peep",
+      "language": "hi",
+      "file": "0998200d206228fe133d727c92cc1c39ccb4fe35ee50736363a7455feed97794.mp3",
+      "bytes": 87264
+    },
+    {
+      "kind": "rhymes",
+      "item_id": "humpty",
+      "language": "en",
+      "file": "c886c9a2456caf4ea938ba3859a227cd141484de138db079682054f1a5e1991e.mp3",
+      "bytes": 73872
+    },
+    {
+      "kind": "rhymes",
+      "item_id": "little-bo-peep",
+      "language": "en",
+      "file": "a5e97db071e499aefbb164cb68b7e7d2727c7c03cf5f37caf2ed76d2245b152f.mp3",
+      "bytes": 72576
+    },
+    {
+      "kind": "rhymes",
+      "item_id": "little-bo-peep",
+      "language": "mr",
+      "file": "cc453b9143936ffcaa31c2610d3facf4b8cabf50a45abe602a19c64b888c2c3e.mp3",
+      "bytes": 81504
+    },
+    {
+      "kind": "rhymes",
+      "item_id": "one-two-shoe",
+      "language": "mr",
+      "file": "e28a87722307506032d2e96a518b69c8d855b2a08561a98778d67b28bd3cb759.mp3",
+      "bytes": 132480
+    },
+    {
+      "kind": "rhymes",
+      "item_id": "one-two-shoe",
+      "language": "hi",
+      "file": "6441d7c286c673e694ed9eb4e36e0542b6df1f9efb277ee314d1d1c18a059b62.mp3",
+      "bytes": 153072
+    },
+    {
+      "kind": "rhymes",
+      "item_id": "one-two-shoe",
+      "language": "en",
+      "file": "654c472151e3b99371abc3eedb939bc2082a614098c8aa10011e8fce769e39a5.mp3",
+      "bytes": 105408
+    },
+    {
+      "kind": "rhymes",
+      "item_id": "pat-cake",
+      "language": "en",
+      "file": "8649dcfbce8ba35f75f6943b4640f3f90455e79006bdb059bc6c2ba4dd19e3c4.mp3",
+      "bytes": 81504
+    },
+    {
+      "kind": "poems",
+      "item_id": "the-swing",
+      "language": "hi",
+      "file": "7e252509a48e86e8ffc79cdc47717afa65f7eaeebd0bf58a42b5659714e1be26.mp3",
+      "bytes": 234576
+    },
+    {
+      "kind": "poems",
+      "item_id": "rain-stevenson",
+      "language": "hi",
+      "file": "971e7e9b43647a37b5cee077470bafc8e5e97a6b469c2681d7b47175a5a86e26.mp3",
+      "bytes": 83952
+    },
+    {
+      "kind": "poems",
+      "item_id": "rain-stevenson",
+      "language": "en",
+      "file": "57a463a66db5bc46cc0b319f7c18b3a8a8a21fd3e631ede7ae6e9bf48643bec8.mp3",
+      "bytes": 61920
+    },
+    {
+      "kind": "poems",
+      "item_id": "wind-stevenson",
+      "language": "hi",
+      "file": "25141750194e41a36c574b158f2839a05afd9152a832677b376141685f2a71c4.mp3",
+      "bytes": 342576
+    },
+    {
+      "kind": "poems",
+      "item_id": "the-star",
+      "language": "hi",
+      "file": "3c54d623df7f89bc17bcb73643920195cae2c801557dc504ce79aa5a3040a5ce.mp3",
+      "bytes": 371088
+    },
+    {
+      "kind": "poems",
+      "item_id": "the-swing",
+      "language": "en",
+      "file": "02cecbcce47655c975254d53c9f64de5ec3233eeda5dd173d201ff70bb314d7c.mp3",
+      "bytes": 176544
+    },
+    {
+      "kind": "poems",
+      "item_id": "the-star",
+      "language": "en",
+      "file": "e90fe11c3a7c321860f8545ac068686c2de488967da6d63315d1ad193cb271ac.mp3",
+      "bytes": 304848
+    },
+    {
+      "kind": "poems",
+      "item_id": "bed-summer",
+      "language": "hi",
+      "file": "e675375deaba06230c8b0c140aabad102b45b0e7d8c887f4f48af48a2cc06c0e.mp3",
+      "bytes": 230400
+    },
+    {
+      "kind": "poems",
+      "item_id": "utho-lal",
+      "language": "hi",
+      "file": "8bd97cba61e819039c3750b6e67e14758ed7164dbf0a0a33bd0fa62336da8a3c.mp3",
+      "bytes": 269712
+    },
+    {
+      "kind": "poems",
+      "item_id": "bed-summer",
+      "language": "en",
+      "file": "9c6802d6983096420bff1ddc1d281fef3741e64b10143abb1d3249bd8fd7be61.mp3",
+      "bytes": 186768
+    },
+    {
+      "kind": "poems",
+      "item_id": "koyal-hariaudh",
+      "language": "hi",
+      "file": "2159504714368e9e7dcf2462888f48bd633bf729a5ca907648479c74077f397c.mp3",
+      "bytes": 497232
+    },
+    {
+      "kind": "poems",
+      "item_id": "utho-lal",
+      "language": "en",
+      "file": "c4045027efe3066aaee1fafbc9ee1f40dd62773e79dd7233fc6d55654780a873.mp3",
+      "bytes": 228672
+    },
+    {
+      "kind": "poems",
+      "item_id": "kabir-kind-words",
+      "language": "hi",
+      "file": "9e208810ef31846b677ad692a35270319e49574b60731f360e1d5c827193deeb.mp3",
+      "bytes": 67104
+    },
+    {
+      "kind": "poems",
+      "item_id": "kabir-kind-words",
+      "language": "en",
+      "file": "8a6a9bf69c5b744a07a3f1e1b60f70cee7f8eceb62f48aecc5f989071a674c41.mp3",
+      "bytes": 80496
+    },
+    {
+      "kind": "poems",
+      "item_id": "kabir-patience",
+      "language": "hi",
+      "file": "2bab4175ff7aa64b4dd2ea12264520702f91962e525a3f957f0ce2e33605da27.mp3",
+      "bytes": 69120
+    },
+    {
+      "kind": "poems",
+      "item_id": "rahim-love",
+      "language": "hi",
+      "file": "5bc7c7e8598544d12f34bd5794f2952a5d7089b31c00841a13bf8eeb5534cca0.mp3",
+      "bytes": 71424
+    },
+    {
+      "kind": "poems",
+      "item_id": "rahim-love",
+      "language": "en",
+      "file": "7f4a1dfa23e1ba970e34804336007c187cac7b72e8ebc677299be7b55c4eea14.mp3",
+      "bytes": 68688
+    },
+    {
+      "kind": "poems",
+      "item_id": "kabir-patience",
+      "language": "en",
+      "file": "e1acf44561bc901eb31f661f7c9093e970cd505b6a14c4d7df535ca4404a7702.mp3",
+      "bytes": 86256
+    },
+    {
+      "kind": "poems",
+      "item_id": "koyal-hariaudh",
+      "language": "en",
+      "file": "85d811afed752a6374a544e3c890b44a05446c6b19d21c42ef84b9300611cc58.mp3",
+      "bytes": 299952
+    },
+    {
+      "kind": "poems",
+      "item_id": "kadamb-tree",
+      "language": "hi",
+      "file": "afc31ec806d45cb93e9264d955ddd7d47ea7e66e1432188bdf3559933c3d3251.mp3",
+      "bytes": 715824
+    },
+    {
+      "kind": "poems",
+      "item_id": "wind-stevenson",
+      "language": "en",
+      "file": "aed696d1e5219550d337e5f463313d6437d81d5bcafe7970545cb3a73d39a039.mp3",
+      "bytes": 298368
+    },
+    {
+      "kind": "poems",
+      "item_id": "kadamb-tree",
+      "language": "en",
+      "file": "e055e2d817fad29ce0948a9bfc2169772f74f3b59371116ac6a2a2c6fe3f6569.mp3",
+      "bytes": 422496
+    }
+  ],
+  "failures": []
+}

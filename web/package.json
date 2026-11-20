@@ -1,0 +1,1 @@
+{"name":"brightly-web","private":true,"version":"1.0.0","type":"module","scripts":{"dev":"node scripts/build.mjs --watch","build":"node scripts/build.mjs"},"dependencies":{"@react-three/fiber":"9.8.2","react":"19.3.1","react-dom":"19.3.1","three":"0.187.0"},"devDependencies":{"esbuild":"0.25.12"}}

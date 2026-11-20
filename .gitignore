@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+brightly.sqlite3
+brightly.sqlite3-*
+web/node_modules/
+web/dist/
+web/.npm-cache/
+.brightly-audio/
+.env
+.env.*
+tests/node_modules/
