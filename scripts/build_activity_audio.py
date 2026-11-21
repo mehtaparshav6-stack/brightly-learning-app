@@ -1,4 +1,4 @@
-"""Bundle neural lesson/game readings; deduplicate repeated choices and instructions."""
+
 import asyncio
 import json
 import os

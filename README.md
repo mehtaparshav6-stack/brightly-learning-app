@@ -1,6 +1,6 @@
 # Brightly
 
-**Small steps, bright futures.** Brightly is a parent-managed learning garden for children aged 3–7. Its lessons, stories, rhymes, poems, and games teach kindness, good habits, friendship, and everyday skills in English, Hindi, and Marathi.
+**Small steps, bright futures.** Brightly is a parent-managed learning garden for children aged 3–7. Its lessons, stories, rhymes, poems, and games teach kindness, good habits, friendship, and everyday skills in English, Hindi.
 
 This is a standalone project. No Brightly source repository or Base44 export was included with the brief, so the application uses React, esbuild, React Three Fiber, FastAPI, and SQLite. The public welcome page has a pointer- and scroll-responsive 3D garden. The learning workspace uses simpler controls suited to young children.
 
